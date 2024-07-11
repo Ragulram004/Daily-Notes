@@ -19,7 +19,7 @@ Stay tuned for daily updates and join me on this exciting journey of growth and 
 **Commitment to Excellence**
 > "Success is the sum of small efforts, repeated day-in and day-out." - Robert Collier
 
-Feel free to explore, learn, and maybe even collaborate! Let's keep pushing the boundaries of what's possible.
+
 
 ---
 
