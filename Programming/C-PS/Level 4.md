@@ -785,16 +785,15 @@ char get_flames_result(int count) {
         len--;
     }
 
+
+
+
     return flames[0];
 }
 
 int main() {
     char player1[100], player2[100];
-
-    printf("Enter name of Player 1: ");
     scanf("%s", player1);
-
-    printf("Enter name of Player 2: ");
     scanf("%s", player2);
 
     int remaining_count = count_remaining_chars(player1, player2);
@@ -805,4 +804,117 @@ int main() {
     return 0;
 }
 
-```obs
+```
+# Kth Distinct String in an Array
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int isdistinct(char arr[][10],int size, int k){
+    int count=0;
+    for (int i =0;i<size;i++){
+        if(strcmp(arr[i],arr[k]) == 0){
+            count++;
+        }
+    }
+    return count == 1;
+}
+
+char* kthdistinct(char arr[][10],int size,int k){
+    int distinctcount =0;
+    for (int i=0;i<size;i++){
+        if(isdistinct(arr,size,i)){
+            distinctcount++;
+            if(distinctcount == k){
+                return arr[i];
+            }
+        }
+    }
+    return "";
+}
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    char arr[n][10];
+    for (int i=0;i<n;i++){
+        scanf("%s",arr[i]);
+    }
+    int k;
+    scanf("%d",&k);
+    
+    char* result = kthdistinct(arr,n,k);
+    if(strlen(result) == 0){
+        printf("\"\"");
+    }else{
+        printf("%s",result);
+    }
+    
+    return 0;
+}
+```
+# String-Roman to Integer
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+// Function to get the integer value of a Roman numeral character
+int romanToInt(char c) {
+    switch(c) {
+        case 'I': return 1;
+        case 'V': return 5;
+        case 'X': return 10;
+        case 'L': return 50;
+        case 'C': return 100;
+        case 'D': return 500;
+        case 'M': return 1000;
+        default: return -1;
+    }
+}
+
+bool isValidRomanNumeral(char *s) {
+    for (int i = 0; s[i] != '\0'; i++) {
+        if (romanToInt(s[i]) == -1) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int convertRomanToInt(char *s) {
+    int total = 0;
+    int prevValue = 0;
+    int currentValue = 0;
+    
+    for (int i = strlen(s) - 1; i >= 0; i--) {
+        currentValue = romanToInt(s[i]);
+        if (currentValue < prevValue) {
+            total -= currentValue;
+        } else {
+            total += currentValue;
+        }
+        
+        prevValue = currentValue;
+    }
+    
+    return total;
+}
+
+int main() {
+    char s[20];
+    scanf("%s", s);
+    if (!isValidRomanNumeral(s)) {
+        printf("Error: Invalid Roman numeral input.\n");
+        return 1;
+    }
+    int result = convertRomanToInt(s);
+    printf("Output: %d\n", result);
+
+    return 0;
+}
+
+```
+
+

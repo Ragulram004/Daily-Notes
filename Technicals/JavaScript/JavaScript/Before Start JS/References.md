@@ -1,0 +1,3 @@
+- [some codes](https://medium.com/@masterrajpatel/some-javascript-you-should-know-part-1-63164f3fe27)
+- [Ajax](https://medium.com/@masterrajpatel/do-you-even-know-about-ajax-99c736beb13f)
+- 
