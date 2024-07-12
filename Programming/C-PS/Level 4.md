@@ -914,7 +914,123 @@ int main() {
 
     return 0;
 }
-
 ```
+# Longest Palindrome Substring
+```c
+#include <stdio.h>
+#include <string.h>
 
+int ispali(int i, int j,char *str){
+    while (i <= j) {
+        if (str[i] != str[j]) {
+            return 0;
+        }
+        i++;
+        j--;
+    }
+    return 1;
+}
+
+int main() {
+    char str[100];
+    scanf("%s",str);
+    int len = strlen(str);
+    char max[100];
+    for(int i=0;i<len;i++){
+        for(int j =i+1;j<len;j++){
+            if(ispali(i,j,str)){
+                int m = strlen(max);int count =0;
+                for(int k =i;k<=j;k++){
+                    count++;
+                }
+                if(m<count){
+                    for(int l = 0;l<count;l++){
+                        max[l] = str[i++];
+                    }
+                }
+            }
+        }
+    }
+    
+    printf("%s",max);
+
+    return 0;
+}
+```
+# Ransom Note
+```c
+#include<stdio.h>
+#include<string.h>
+
+int ramsonNote(char *ramson,char* magzine){
+    int magcount[26] = {0};
+    
+    for(int i =0;magzine[i] !='\0';i++){
+        magcount[magzine[i]-'a']++;
+    }
+    for(int i =0;ramson[i] != '\0';i++){
+        if(magcount[ramson[i]-'a'] == 0){
+            return 0;
+        }
+        magcount[ramson[i]]--;
+    }
+    return 1;
+    
+}
+
+int main(){
+    char ramson[100];
+    scanf("%s",ramson);
+    char magzine[100];
+    scanf("%s",magzine);
+    
+    if( ramsonNote(ramson,magzine)){
+        printf("True");
+    }else{
+        printf("False");
+    }
+}
+```
+# Second Largest Element in a String
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+void seclar(char *s){
+    int digits[10] = {0}; 
+
+    for (int i = 0; s[i] != '\0'; i++) {
+        if (s[i] >= '0' && s[i] <= '9') {
+            digits[s[i] - '0']++;
+        }
+    }
+
+    int firstLargest = -1;
+    int secondLargest = -1;
+
+    for (int i = 9; i >= 0; i--) {
+        if (digits[i]) {
+            if (firstLargest == -1) {
+                firstLargest = i;
+            } else if (secondLargest == -1) {
+                secondLargest = i;
+                printf("%d",secondLargest);
+                exit(0);
+            }
+        }
+    }
+}
+
+int main() {
+    char str[100];
+    scanf("%s",str);
+    int len = strlen(str);
+    
+    seclar(str);
+
+
+    return 0;
+}
+```
 
