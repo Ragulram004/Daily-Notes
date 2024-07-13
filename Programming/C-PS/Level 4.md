@@ -1033,4 +1033,172 @@ int main() {
     return 0;
 }
 ```
+# Make Three Strings Equal by deleting rightmost element
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int right(char* s1, char* s2, char* s3 ){
+    int l1 = strlen(s1);
+    int l2 = strlen(s2);
+    int l3 = strlen(s3);
+    
+    int i = l1-1;
+    int j = l2-1;
+    int k = l3-1;
+    int operation = 0;
+    
+    while(i>=0 && j>=0 && k>=0){
+        if(s1[i] == s2[j] && s2[j] == s3[k]){
+            i--;j--;k--;
+        }else{
+            if(i>=j && i>=k){
+                i--;
+            }else if(j>=i && j>=k){
+                j--;
+            }else{
+                k--;
+            }
+            operation++;
+        }
+    }
+    return operation;
+}
+
+int main(){
+    char s1[100];
+    char s2[100];
+    char s3[100];
+    scanf("%s",s1);
+    scanf("%s",s2);
+    scanf("%s",s3);
+
+    if(strcmp(s1,s2)==0 && strcmp(s2,s3)==0){
+        printf("0");
+    }else{
+        int result = right(s1,s2,s3);
+            if(result != -1){
+                printf("%d",result);
+            }else{
+                printf("-1");
+            }
+        
+    }
+}
+```
+# First non repeated character and last repeated character in a word.
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() {
+    char s[100];
+    scanf("%s", s);
+    int len = strlen(s);
+
+    char first_non_repeated = '\0';
+    for (int i = 0; i < len; i++) {
+        int flag = 1;
+        for (int j = 0; j < len; j++) {
+            if (i != j && s[i] == s[j]) {
+                flag = 0;
+                break;
+            }
+        }
+        if (flag) {
+            first_non_repeated = s[i];
+            break;
+        }
+    }
+    if (first_non_repeated != '\0') {
+        printf("First_non_repeated: %c\n", first_non_repeated);
+    } else {
+        printf("First_non_repeated: None\n");
+    }
+
+    char last_repeated = '\0';
+    for (int i = len - 1; i >= 0; i--) {
+        for (int j = i - 1; j >= 0; j--) {
+            if (s[i] == s[j]) {
+                last_repeated = s[i];
+                break;
+            }
+        }
+        if (last_repeated != '\0') {
+            break;
+        }
+    }
+    if (last_repeated != '\0') {
+        printf("Last_repeated: %c\n", last_repeated);
+    } else {
+        printf("Last_repeated: None\n");
+    }
+
+    return 0;
+}
+
+```
+# Valid Email
+```c
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+ int isValid(char* s){
+     int len = strlen(s);
+     int atcount =0;
+     int atindex = -1;
+     int dotcount =0;
+     
+     if(len<3){
+         return 0;
+     }
+     
+     for (int i=0;i<len;i++){
+         if(s[i] == '@'){
+             atcount++;
+             atindex = i;
+         }
+     }
+     
+     if(atcount != 1){
+         return 0;
+     }
+     if(atindex == 0 || atindex == len-1){
+         return 0;
+     }
+     for(int i = atcount+1;i<len;i++){
+         if(s[i]=='.'){
+             dotcount++;
+         }
+     }
+    if(dotcount == 0){
+        return 0;
+    }
+     
+    if(s[atcount+1]=='.' || s[len-1] == '.'){
+        return 0;
+    }
+
+    return 1;
+     
+ }
+
+
+int main() {
+    char s[100];
+    scanf("%s",s);    
+    int result = isValid(s);
+    if(result){
+        printf("Valid");
+    }else{
+        printf("InValid");
+    }
+
+    return 0;
+}
+```
 
