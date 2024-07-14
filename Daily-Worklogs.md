@@ -1,3 +1,8 @@
+## Day5
+- 14-07-2024
+	- Developed Hero section in Portfolio. [link](https://www.linkedin.com/posts/ragulram-b-455387253_30daysofmern-30daysofmern-30daysofmern-activity-7218279765714092032-VnAu?utm_source=share&utm_medium=member_desktop)
+	- Linked In intro to #30daysofMERNstack
+---
 ## Day4
 - 13-07-2024
 	- Added "Reactjs" Notes.
