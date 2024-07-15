@@ -26,6 +26,6 @@
 ---
 ## Day1
 - 10-07-2024
-	- Problem Solving on level 4 "Strings".
+	- Problem Solving on level 4 "Strings"
 -------------
 
