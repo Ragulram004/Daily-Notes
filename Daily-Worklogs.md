@@ -1,7 +1,13 @@
+## Day6
+- 15-07-2024
+	- PS on level 4 "Strings" 
+	- Portfolio hero section.
+	- Linked #30daysofMERN Day1 posted.
+---
 ## Day5
 - 14-07-2024
 	- Developed Hero section in Portfolio. [Post](https://www.linkedin.com/posts/ragulram-b-455387253_30daysofmern-30daysofmern-30daysofmern-activity-7218279765714092032-VnAu?utm_source=share&utm_medium=member_desktop)
-	- Linked In intro to #30daysofMERNstack
+	- Linked In intro to #30daysofMERN
 ---
 ## Day4
 - 13-07-2024

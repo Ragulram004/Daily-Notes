@@ -1201,4 +1201,64 @@ int main() {
     return 0;
 }
 ```
+# Count the occurrence of special characters in the given string.
+```c
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+
+#define MAX_CHAR 256
+
+void count(char* s){
+    int count[MAX_CHAR] ={0};
+    for(int i =0;i< strlen(s);i++){
+        if(!isalnum(s[i]) && !isspace(s[i])){
+            count[s[i]]++;
+        }
+    }
+    
+    for(int i=0;i<MAX_CHAR;i++){
+        if(count[i] > 0 && !isalnum(i) && !isspace(i)){
+            printf("%c : %d \n",i,count[i]);
+        }
+    }
+}
+
+
+int main(){
+    char s[100];
+    scanf("%[^\n]s",s);
+    
+    count(s);
+    
+    
+}
+
+-------------------------------------------
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+
+
+int main(){
+    char s[100];
+    scanf("%[^\n]s",s);
+    int len = strlen(s);
+    
+    for(int i =0;i<len;i++){
+      if(!isalnum(s[i]) && !isspace(s[i])){
+          int count =1;
+          for(int j=i+1;j<len;j++){
+              if(s[i] == s[j]){
+                  count++;
+                  s[j] = s[j+1];
+                  len--;
+              }
+          }
+          printf("%c : %d \n",s[i],count);
+          s[i] = s[i+1];
+      }  
+    }
+}
+```
 
