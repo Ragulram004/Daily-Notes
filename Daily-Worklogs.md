@@ -1,3 +1,8 @@
+## Day7
+- 16-07-2024
+  - PS on level "Strings"
+  - Portfolio About Section.
+---
 ## Day6
 - 15-07-2024
 	- PS on level 4 "Strings" 
