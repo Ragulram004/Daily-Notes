@@ -1261,4 +1261,119 @@ int main(){
     }
 }
 ```
+# Remove the left along with*
+```c
+#include <stdio.h>
+#include <string.h>
+
+void processString(char *input, char *output) {
+    int j = 0;
+    int n = strlen(input);
+    
+    for (int i = 0; i < n; i++) {
+        if (input[i] == '*') {
+            if (j > 0) {
+                j--;
+            }
+        } else {
+            output[j++] = input[i];
+        }
+    }
+    output[j] = '\0';
+}
+
+int main() {
+    char input[100];
+    char output[100];
+
+    printf("Enter the input string: ");
+    scanf("%[^\n]s",input);
+
+    processString(input, output);
+
+    printf("Processed output: \"%s\"\n", output);
+
+    return 0;
+}
+
+```
+# Words to integer
+
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+// Helper function to map number words to their corresponding integer values
+int wordToNumber(const char* word) {
+    if (strcmp(word, "Zero") == 0) return 0;
+    if (strcmp(word, "One") == 0) return 1;
+    if (strcmp(word, "Two") == 0) return 2;
+    if (strcmp(word, "Three") == 0) return 3;
+    if (strcmp(word, "Four") == 0) return 4;
+    if (strcmp(word, "Five") == 0) return 5;
+    if (strcmp(word, "Six") == 0) return 6;
+    if (strcmp(word, "Seven") == 0) return 7;
+    if (strcmp(word, "Eight") == 0) return 8;
+    if (strcmp(word, "Nine") == 0) return 9;
+    if (strcmp(word, "Ten") == 0) return 10;
+    if (strcmp(word, "Eleven") == 0) return 11;
+    if (strcmp(word, "Twelve") == 0) return 12;
+    if (strcmp(word, "Thirteen") == 0) return 13;
+    if (strcmp(word, "Fourteen") == 0) return 14;
+    if (strcmp(word, "Fifteen") == 0) return 15;
+    if (strcmp(word, "Sixteen") == 0) return 16;
+    if (strcmp(word, "Seventeen") == 0) return 17;
+    if (strcmp(word, "Eighteen") == 0) return 18;
+    if (strcmp(word, "Nineteen") == 0) return 19;
+    if (strcmp(word, "Twenty") == 0) return 20;
+    if (strcmp(word, "Thirty") == 0) return 30;
+    if (strcmp(word, "Forty") == 0) return 40;
+    if (strcmp(word, "Fifty") == 0) return 50;
+    if (strcmp(word, "Sixty") == 0) return 60;
+    if (strcmp(word, "Seventy") == 0) return 70;
+    if (strcmp(word, "Eighty") == 0) return 80;
+    if (strcmp(word, "Ninety") == 0) return 90;
+    if (strcmp(word, "Hundred") == 0) return 100;
+    if (strcmp(word, "Thousand") == 0) return 1000;
+    if (strcmp(word, "Million") == 0) return 1000000;
+    if (strcmp(word, "Billion") == 0) return 1000000000;
+    return -1; // For any unknown word
+}
+
+// Function to convert the string to a number
+int stringToNumber(char* input) {
+    char* token;
+    int result = 0;
+    int current = 0;
+    int multiplier = 0;
+
+    token = strtok(input, " ");
+    while (token != NULL) {
+        int number = wordToNumber(token);
+        if (number == 100) {
+            current *= number;
+        } else if (number >= 1000) {
+            current *= number;
+            result += current;
+            current = 0;
+        } else if (number > 0) {
+            current += number;
+        }
+        token = strtok(NULL, " ");
+    }
+    result += current;
+    return result;
+}
+
+int main() {
+    char input[1000];
+   
+   scanf("%[^\n]s",input);
+   printf("%d",stringToNumber(input));
+   
+    return 0;
+}
+```
+
 
