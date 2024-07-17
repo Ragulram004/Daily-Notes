@@ -1,13 +1,16 @@
+
+---
 ## Day7
 - 16-07-2024
   - PS on level "Strings"
   - Portfolio About Section.
+  - Linked In #30daysofMERN Day2 posted.
 ---
 ## Day6
 - 15-07-2024
 	- PS on level 4 "Strings" 
 	- Portfolio hero section.
-	- Linked #30daysofMERN Day1 posted.
+	- Linked In #30daysofMERN Day1 posted.
 ---
 ## Day5
 - 14-07-2024
