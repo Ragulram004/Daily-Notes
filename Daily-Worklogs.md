@@ -1,4 +1,7 @@
-
+## Day8
+- 17-07-2024
+	- About Section on Portfolio.
+	- Linked In #30daysofMERN Day3 posted.
 ---
 ## Day7
 - 16-07-2024
