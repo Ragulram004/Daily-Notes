@@ -1,3 +1,8 @@
+## Day9
+- 18-07-2024
+	- Started project section on portfolio
+	- Linked In #30daysofMERN Day4 posted.
+---
 ## Day8
 - 17-07-2024
 	- About Section on Portfolio.
