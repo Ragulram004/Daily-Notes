@@ -952,9 +952,8 @@ int main() {
         }
     }
     
-    printf("%s",max);
+    printf("%s\n",max);
 
-    return 0;
 }
 ```
 # Ransom Note
