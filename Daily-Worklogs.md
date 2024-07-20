@@ -1,3 +1,8 @@
+## Day11
+- 20-07-2024
+	- Linked In #30daysofMERN Day6 posted.
+	- Portfolio Projects section added swiper.
+---
 ## Day10
 - 19-07-2024
 	- Ps on level 4
