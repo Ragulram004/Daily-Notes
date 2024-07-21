@@ -1,4 +1,8 @@
-
+## Day12
+- 21-07-2024
+	-  Linked In #30daysofMERN Day7 posted.
+	- Portfolio skills section.
+---
 ## Day11
 - 20-07-2024
 	- Linked In #30daysofMERN Day6 posted.
