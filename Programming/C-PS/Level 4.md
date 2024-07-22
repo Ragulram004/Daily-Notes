@@ -265,72 +265,6 @@ int main() {
     return 0;
 }
 ```
-# Longest Palindrome Substring
-```c
-#include <stdio.h>
-#include <string.h>
-
-// Function to print the longest palindrome substring
-void printLongestPalindromeSubstring(char *s) {
-    int length = strlen(s);
-
-    // Initialize a 2D array to store if substring s[i...j] is palindrome
-    int dp[length][length];
-    memset(dp, 0, sizeof(dp)); // Initialize dp array to 0
-
-    int start = 0; // Start index of the longest palindrome substring found
-    int maxLength = 1; // Length of the longest palindrome substring found
-
-    // All substrings of length 1 are palindromes
-    for (int i = 0; i < length; i++) {
-        dp[i][i] = 1;
-    }
-
-    // Check for substrings of length 2
-    for (int i = 0; i < length - 1; i++) {
-        if (s[i] == s[i + 1]) {
-            dp[i][i + 1] = 1;
-            start = i;
-            maxLength = 2;
-        }
-    }
-
-    // Check for substrings of length > 2
-    for (int len = 3; len <= length; len++) {
-        for (int i = 0; i <= length - len; i++) {
-            int j = i + len - 1; // Ending index of substring
-
-            // Check if substring s[i...j] is palindrome
-            if (s[i] == s[j] && dp[i + 1][j - 1]) {
-                dp[i][j] = 1;
-
-                // Update longest palindrome substring found
-                if (len > maxLength) {
-                    start = i;
-                    maxLength = len;
-                }
-            }
-        }
-    }
-
-    // Print the longest palindrome substring
-    printf("Longest Palindrome Substring: ");
-    for (int i = start; i < start + maxLength; i++) {
-        printf("%c", s[i]);
-    }
-    printf("\n");
-}
-
-int main() {
-    char input_string[] = "bananas";
-
-    // Find and print the longest palindrome substring
-    printLongestPalindromeSubstring(input_string);
-
-    return 0;
-}
-
-```
 # "23:24:09" - Hours:23 Minutes:24 Seconds:9
 ```c
 #include <stdio.h>
@@ -805,6 +739,7 @@ int main() {
 }
 
 ```
+
 # Kth Distinct String in an Array
 ```c
 #include <stdio.h>
@@ -915,6 +850,7 @@ int main() {
     return 0;
 }
 ```
+
 # Longest Palindrome Substring
 ```c
 #include <stdio.h>
@@ -1139,6 +1075,7 @@ int main() {
 }
 
 ```
+
 # Valid Email
 ```c
 // Online C compiler to run C program online
