@@ -1,3 +1,9 @@
+## Day13
+- 22-07-2024
+	- Linked In #30daysofMERN Day8 posted.
+	- worked in scroll animations.
+	- PS on level 4.
+---
 ## Day12
 - 21-07-2024
 	-  Linked In #30daysofMERN Day7 posted.
