@@ -1,3 +1,8 @@
+## Day 14
+- 23-07-2024
+	- Linked In #30daysofMERN Day9 posted.
+	- Worked on contact section in portfolio.
+---
 ## Day13
 - 22-07-2024
 	- Linked In #30daysofMERN Day8 posted.
