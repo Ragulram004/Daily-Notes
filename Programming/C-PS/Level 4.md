@@ -295,6 +295,11 @@ int main() {
     minutes = stringToInt(minutes_str);
     seconds = stringToInt(seconds_str);
 
+	if(hour>24||minutes>60||seconds>60){
+		printf("Invalid");
+		exit(0);
+	}
+
     // Output the formatted time
     printf("Hours : %d Minutes : %d Seconds : %d\n", hours, minutes, seconds);
 

@@ -1,23 +1,28 @@
 # 2d array 90deg rotation
 ```c
 #include <stdio.h>
-#include <string.h>
-
-int main(){
+#include<string.h>
+int main() {
     int n;
     scanf("%d",&n);
-    char s[n][10];
+    getchar();
+    char s[n][n];
+    char temp[10];
     
-    for(int i =0;i<n;i++){
-        scanf("%s",s[i]);
+    for (int i = 0; i < n; i++) {
+        scanf("%[^\n]s",temp);| fgets(temp, sizeof(temp), stdin);
+		getchar();            | temp[strcspn(temp, "\n")] = '\0';
+        for (int j = 0, k = 0; j < n; j++, k += 2) {
+            s[i][j] = temp[k];
+        }
     }
-    
-    for(int i =0 ;i<n;i++){
-        for(int j=0;j<n;j++){
-            printf("%c ",s[j][i]);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+           printf("%c ",s[j][i]);  
         }
         printf("\n");
     }
+    return 0;
 }
 ```
 # Reverse the even position words
@@ -227,3 +232,39 @@ int main(){
 
 ```
 
+
+
+# Find the index of the given word in the string
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main() {
+    char s[100];
+    scanf("%[^\n]s",s);getchar();
+    char s1[10];
+    scanf("%s",s1);getchar();
+    
+    int start =0;
+    
+    for(int i =0 ;i<=strlen(s);i++){
+        if(s[i] == ' ' || s[i] == '\0'){
+            int word_len = i-start;
+            char current_word[50];
+            strncpy(current_word,s+start,word_len);
+            current_word[word_len] = '\0';
+
+            
+            if(!strcmp(current_word,s1)){
+                printf("%d ",start);
+            }
+            start = i+1;
+            
+        }
+    }
+    
+}
+
+```
