@@ -1,3 +1,11 @@
+## Day19
+- 29-07-2024
+	- Worked on contact section (added Email feature) portfolio.
+---
+## Day18
+- 28-07-2024
+	- Worked on contact section (styles) portfolio.
+---
 ## Day17
 - 26-07-2024
 	- posted Linked In #30daysofMERN Day11 post.
@@ -9,7 +17,7 @@
 ---
 ## Day15
 - 24-07-2024
-	- Woked for Linked In #30daysofMERN Day10 post.
+	- Worked for Linked In #30daysofMERN Day10 post.
 ---
 ## Day 14
 - 23-07-2024
