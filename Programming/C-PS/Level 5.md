@@ -155,48 +155,4 @@ int main(){
     printf("%d",result);
 }
 ```
-## String Compression
-```jsx
-const Stars = (props) => {
-  const ref = useRef();
-  const [positions] = useState(() => {
-    const pos = new Float32Array(5000 * 3);
-    for (let i = 0; i < 5000; i++) {
-      pos[i * 3] = (Math.random() - 0.5) * 2.4; // X position
-      pos[i * 3 + 1] = (Math.random() - 0.5) * 2.4; // Y position
-      pos[i * 3 + 2] = Math.random() * -2.4; // Z position behind the screen
-    }
-    return pos;
-  });
 
-  useFrame((state, delta) => {
-    for (let i = 0; i < 5000; i++) {
-      positions[i * 3 + 2] += delta * 0.5; // Move forward
-      if (positions[i * 3 + 2] > 1.2) { // Reset to behind the screen when reaching the front
-        positions[i * 3 + 2] = Math.random() * -2.4; // New random position behind the screen
-      }
-    }
-    ref.current.geometry.attributes.position.needsUpdate = true;
-  });
-
-  return (
-    <group>
-      <Points ref={ref} positions={positions} stride={3} frustumCulled {...props}>
-        <PointMaterial
-          transparent
-          color='#f272c8'
-          size={0.002}
-          sizeAttenuation={true}
-          depthWrite={false}
-        />
-      </Points>
-    </group>
-  );
-};
-
-
-```
-
-```jsx
-const Stars = (props) => { const ref = useRef(); const [positions] = useState(() => { const pos = new Float32Array(5000 * 3); for (let i = 0; i < 5000; i++) { pos[i * 3] = (Math.random() - 0.5) * 2.4; // X position pos[i * 3 + 1] = (Math.random() - 0.5) * 2.4; // Y position pos[i * 3 + 2] = (Math.random() - 0.5) * 2.4; // Z position } return pos; }); useFrame((state) => { const time = state.clock.getElapsedTime(); for (let i = 0; i < 5000; i++) { positions[i * 3 + 1] = Math.sin(time + positions[i * 3]) * 0.1; // Smaller Y position wave } ref.current.geometry.attributes.position.needsUpdate = true; }); return ( <group> <Points ref={ref} positions={positions} stride={3} frustumCulled {...props}> <PointMaterial transparent color='#f272c8' size={0.002} sizeAttenuation={true} depthWrite={false} /> </Points> </group> ); };
-```

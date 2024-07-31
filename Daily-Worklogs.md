@@ -1,3 +1,8 @@
+## Day20
+- 30-07-2024
+	- Worked on porfolio
+	- PS level 5
+---
 ## Day19
 - 29-07-2024
 	- Worked on contact section (added Email feature) portfolio.
