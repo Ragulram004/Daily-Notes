@@ -1,12 +1,13 @@
 ## Day22
 - 2-07-2024
 	- started auth on progress pulse
-	- posted Linked In #30daysofMERN Day12 post.
+	- posted Linked In #30daysofMERN Day13 post.
 ---
 ## Day21
 - 1-07-2024
 	- portfolio changes.
 	- Added a new project [progress_pulse](https://github.com/Ragulram004/Progress_Pulse.git) 
+	- posted Linked In #30daysofMERN Day12 post.
 ---
 ## Day20
 - 31-07-2024
