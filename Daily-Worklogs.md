@@ -1,7 +1,12 @@
+## Day24
+- 4-08-2024
+	- Jwt in progress pulse
+	- posted Linked In #30daysofMERN Day15 post.
+---
 ## Day23
 - 3-08-2024
 	- worked on use model progress pulse.
-	- posted Linked In #30daysofMERN Day13 post.
+	- posted Linked In #30daysofMERN Day14 post.
 ---
 ## Day22
 - 2-08-2024
