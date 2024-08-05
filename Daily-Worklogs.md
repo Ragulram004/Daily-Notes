@@ -1,3 +1,8 @@
+## Day25
+- 5-08-2024
+	- Completed Java level 1
+	- login logic on progress pulse.
+---
 ## Day24
 - 4-08-2024
 	- Jwt in progress pulse
