@@ -1,3 +1,7 @@
+## Day26
+- 06-08-2024
+	- Progress Pulse frontend and integration
+---
 ## Day25
 - 5-08-2024
 	- Completed Java level 1
@@ -5,7 +9,7 @@
 ---
 ## Day24
 - 4-08-2024
-	- Jwt in progress pulse
+	- JWT in progress pulse
 	- posted Linked In #30daysofMERN Day15 post.
 ---
 ## Day23
@@ -26,7 +30,7 @@
 ---
 ## Day20
 - 31-07-2024
-	- Worked on porfolio
+	- Worked on portfolio
 	- PS level 5
 ---
 ## Day19
