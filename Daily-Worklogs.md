@@ -1,3 +1,8 @@
+## Day27
+- 07-08-2024
+	- Progress pulse Auth congif
+	- posted Linked In #30daysofMERN Day16 post.
+---
 ## Day26
 - 06-08-2024
 	- Progress Pulse frontend and integration
