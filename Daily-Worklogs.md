@@ -1,3 +1,8 @@
+## Day28
+- 08-08-2024
+	- progress pulse completed.
+	- Started JAVA.
+---
 ## Day27
 - 07-08-2024
 	- Progress pulse Auth congif
