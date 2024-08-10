@@ -1,3 +1,11 @@
+## Day30
+- 10-08-2024
+	- posted Linked In #30daysofMERN Day17 post.
+---
+## Day29
+- 09-08-2024
+	- added hover image reveal on portfolio.
+---
 ## Day28
 - 08-08-2024
 	- progress pulse completed.
