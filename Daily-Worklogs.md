@@ -1,3 +1,8 @@
+## Day31
+- 11-08-2024
+	- posted Linked In #30daysofMERN Day18 post.
+	- added node architecture in the node.js notes.
+---
 ## Day30
 - 10-08-2024
 	- posted Linked In #30daysofMERN Day17 post.
