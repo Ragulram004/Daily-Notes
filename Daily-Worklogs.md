@@ -1,3 +1,11 @@
+## Day33
+- 13-08-2024
+	- Started JAVA and added java to the technical in git.
+---
+## Day32
+- 12-08-2024
+	- Worked in skills section portfolio.
+---
 ## Day31
 - 11-08-2024
 	- posted Linked In #30daysofMERN Day18 post.
