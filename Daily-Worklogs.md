@@ -1,3 +1,7 @@
+## Day34
+- 16-08-2024
+	- posted Linked In #30daysofMERN Day19 post.
+---
 ## Day33
 - 13-08-2024
 	- Started JAVA and added java to the technical in git.
