@@ -1,6 +1,14 @@
-## Day34
+## Day36
+- 17-08-2024
+	- posted Linked In #30daysofMERN Day20 post.
+---
+## Day35
 - 16-08-2024
 	- posted Linked In #30daysofMERN Day19 post.
+---
+## Day34
+- 14-08-2024
+	- Created a new MERN project on Infra-Management-System 
 ---
 ## Day33
 - 13-08-2024
