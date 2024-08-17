@@ -1,6 +1,7 @@
 ## Day36
 - 17-08-2024
 	- posted Linked In #30daysofMERN Day20 post.
+	- Java Conditional and Loops
 ---
 ## Day35
 - 16-08-2024
