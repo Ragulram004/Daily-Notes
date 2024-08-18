@@ -1,3 +1,7 @@
+## Day37
+- 18-08-2024
+	- worked on portfolio on herosection created image to present in portfolio using photoshop.
+ 	- JAVA swith and methods.
 ## Day36
 - 17-08-2024
 	- posted Linked In #30daysofMERN Day20 post.
