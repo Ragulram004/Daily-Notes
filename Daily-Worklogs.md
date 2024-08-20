@@ -1,7 +1,16 @@
+## Day39
+- 20-08-2024
+	- Deployed the portfolio [live](https://devinmotion.vercel.app)
+---
+## Day38
+- 19-08-2024
+	- Worked on the portfolio
+---
 ## Day37
 - 18-08-2024
-	- worked on portfolio on herosection created image to present in portfolio using photoshop.
- 	- JAVA swith and methods.
+	- worked on portfolio on hero section created image to present in portfolio using photoshop.
+	- JAVA switch and methods.
+---
 ## Day36
 - 17-08-2024
 	- posted Linked In #30daysofMERN Day20 post.
