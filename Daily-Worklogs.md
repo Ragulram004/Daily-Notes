@@ -1,4 +1,8 @@
-
+## Day43
+- 23-08-2024
+	-  posted Linked In #30daysofMERN Day21 post.
+	- created custom hook along with usecontext in infra_management_system.
+---
 ## Day42 
 - 22-08-2024
 	- Intra_management_System worked backend.
