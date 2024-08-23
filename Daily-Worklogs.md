@@ -1,3 +1,13 @@
+
+## Day42 
+- 22-08-2024
+	- Intra_management_System worked backend.
+---
+## Day40
+- 21-08-2024
+	- Started working on Intra_management_System.
+	- change in the deployed portfolio.
+---
 ## Day39
 - 20-08-2024
 	- Deployed the portfolio [live](https://devinmotion.vercel.app)
