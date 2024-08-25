@@ -1,3 +1,7 @@
+## Day45
+- 24-08-2024
+	- Worked on the Intra_management_System created deletealert.
+---
 ## Day44
 - 24-08-2024
 	- Worked on the Intra_management_System.
