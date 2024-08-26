@@ -1,6 +1,10 @@
+## Day46
+- 24-08-2024
+	- Worked on the Intra_management_System created new page to assign task.
+---
 ## Day45
 - 24-08-2024
-	- Worked on the Intra_management_System created deletealert.
+	- Worked on the Intra_management_System created delete alert.
 ---
 ## Day44
 - 24-08-2024
