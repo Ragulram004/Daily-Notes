@@ -1,3 +1,8 @@
+## Day48
+- 28-08-2024
+	- updata java notes on Arrays.
+	- Worked on the Intra_management_System created new page to assigned task and delete it.
+---
 ## Day47
 - 27-08-2024
 	- updata java notes on methods.
