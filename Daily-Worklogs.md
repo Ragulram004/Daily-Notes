@@ -36,7 +36,7 @@
 ---
 ## Day39
 - 20-08-2024
-	- Deployed the portfolio [live](https://devinmotion.vercel.app)
+	- Deployed the portfolio [live](https://ragulram.vercel.app)
 ---
 ## Day38
 - 19-08-2024
