@@ -1,3 +1,8 @@
+## Day49
+- 29-08-2024
+	- Linkin post on portfolio live.
+	- made primary changes on porflio.
+---
 ## Day48
 - 28-08-2024
 	- updata java notes on Arrays.
