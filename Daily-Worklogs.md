@@ -1,3 +1,8 @@
+## Day50
+- 30-08-2024
+	- Started DSA on Java
+	- Worked on the Intra_management_System  assigned task backend.
+---
 ## Day49
 - 29-08-2024
 	- Linkin post on portfolio live.

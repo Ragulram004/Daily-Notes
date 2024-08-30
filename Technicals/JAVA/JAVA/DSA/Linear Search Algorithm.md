@@ -1,0 +1,115 @@
+### Searching:
+- It is a process of finding a given value position in a list of values.
+## Linear/ Sequential Search:
+- It is a basic and simple search algorithm. In Linear search we compare the target value with all the other elements given in the list.
+	- e.g.
+	 `arr = [1,2,3,4,5,6,7,8,9]` - if target is 9. (can also be unsorted array)
+		- starting with `index 0` compare with all the other elements in a sequential/linear way.
+### Basics on Time Complexity:
+#### Best Case: O(1) ---> constant
+- How many checks will the loop make in best case. That is the element will be found at `0th index` that make only one comparison which is best case.
+#### Worst Case: O(n)
+- Worst case, here it will go through every element and then it says element not found.
+![[Pasted image 20240830180704.png]]
+## Problems
+#### Search In String
+```java
+public class searchinarray {
+    public static void main(String[] args) {
+        String str = "Ragurlam";
+        char target = 'l';
+        System.out.println(search(str,target));
+    }
+    static boolean search(String str, char target){
+        if(str.length() == 0) return false;
+        for(int i =0 ;i < str.length() ;i++){
+            if(str.charAt(i) == target){
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+#### Search in range
+```java
+class searchinrange{
+  public static void main(String[] args){
+    int[] arr = {1,6,4,7,4,7,3,3,68,34,564,4,6};
+    int target = 34;
+    System.out.println(Search(arr,target,4,10));
+  }
+  static boolean Search(int[] arr, int target,int start, int end){
+    if (arr.length < 1) return false;
+    for(int i = start;i<=end;i++){
+      if(arr[i] == target){
+        return true;
+      }
+    }
+    return false;
+  }
+}
+```
+#### Minimum Number
+```java
+class Minnum{
+  public static void main(String[] args){
+    int[] arr = {10,2,4,2,456,43,34,323,1221,31,1};
+    int result = min(arr);
+    System.out.println(result);
+  }
+  static int min(int[] arr){
+    if(arr.length < 1) return -1;
+    int min = arr[0];
+    for(int i = 1 ;i < arr.length ;i++){
+      if(min > arr[i]){
+        min = arr[i];
+      }
+    }
+    return min;
+  }
+}
+```
+#### Search in 2D array
+```java
+class search2d{
+  public static void main(String[] args){
+    int[][] arr = {
+      {5,325,32,6,32},
+      {3,56,32,7,23,756},
+      {54,67,32,87,34}
+    };
+    int target = 56;
+    System.out.println(search(arr,target));
+  }
+  static boolean search(int[][] arr,int target){
+    for(int i = 0 ; i < arr.length;i++){
+      for(int j =0 ; j <arr[i].length;j++){
+        if(arr[i][j] == target){
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+}
+```
+#### Even Number digits
+```java
+class Solution {
+    public int findNumbers(int[] nums) {
+        int count = 0;
+        for(int i = 0 ; i < nums.length ; i++){
+            if(iseven(nums[i])){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    boolean iseven(int num){
+        int length = String.valueOf(num).length();
+        return length%2 == 0;
+    }
+}
+```
