@@ -1,3 +1,8 @@
+## Day51
+- 31-08-2024
+	- solved problems on leetcode
+	- Worked on the Intra_management_System  assigned task backend.
+---
 ## Day50
 - 30-08-2024
 	- Started DSA on Java
