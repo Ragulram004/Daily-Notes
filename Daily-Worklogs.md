@@ -1,3 +1,8 @@
+## Day52
+- 1-09-2024
+	- solved 1 problem on leetcode.
+	- Worked on the Intra_management_System on Auth.
+---
 ## Day51
 - 31-08-2024
 	- solved problems on leetcode
