@@ -1,3 +1,8 @@
+## Day53
+- 2-09-2024
+	- binary search
+	- Worked on the Intra_management_System protected api route.
+---
 ## Day52
 - 1-09-2024
 	- solved 1 problem on leetcode.
