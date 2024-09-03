@@ -1,10 +1,15 @@
+## Day54
+- 03-09-2024
+	- solved leetcode
+	- binary search java notes.
+---
 ## Day53
-- 2-09-2024
+- 02-09-2024
 	- binary search
 	- Worked on the Intra_management_System protected api route.
 ---
 ## Day52
-- 1-09-2024
+- 01-09-2024
 	- solved 1 problem on leetcode.
 	- Worked on the Intra_management_System on Auth.
 ---
