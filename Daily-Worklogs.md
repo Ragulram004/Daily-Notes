@@ -1,3 +1,8 @@
+## Day55
+- 04-09-2024
+	- solved leetcode
+	- posted Linked In #30daysofMERN Day22 post.
+---
 ## Day54
 - 03-09-2024
 	- solved leetcode
