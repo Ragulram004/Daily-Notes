@@ -1,3 +1,12 @@
+## Day57
+- 06-09-2024
+	- solved leetcode
+	- added leetcode folder to github.
+---
+## Day56
+- 05-09-2024
+	- solved leetcode
+---
 ## Day55
 - 04-09-2024
 	- solved leetcode
