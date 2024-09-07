@@ -1,7 +1,7 @@
 ## Day58
 - 07-09-2024
 	- solved leetcode.
-	- added arrays.
+	- added arrays on github.
 ---
 ## Day57
 - 06-09-2024
