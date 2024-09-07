@@ -1,3 +1,8 @@
+## Day58
+- 07-09-2024
+	- solved leetcode.
+	- added arrays.
+---
 ## Day57
 - 06-09-2024
 	- solved leetcode
