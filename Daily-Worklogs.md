@@ -1,3 +1,7 @@
+## Day59
+- 08-09-2024
+	- added Trees on github.
+---
 ## Day58
 - 07-09-2024
 	- solved leetcode.
@@ -5,7 +9,7 @@
 ---
 ## Day57
 - 06-09-2024
-	- solved leetcode
+	- solved leetcode.
 	- added leetcode folder to github.
 ---
 ## Day56
