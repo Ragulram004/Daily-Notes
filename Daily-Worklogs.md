@@ -1,3 +1,8 @@
+## Day60
+- 10-09-2024
+	- Solved Leetcode.
+	- prepared java level 2.
+---
 ## Day59
 - 08-09-2024
 	- added Trees on github.
