@@ -14,7 +14,7 @@ int main() {
     return 0;
 }
 ```
-## Palindrome Checker
+## Sentence Palindrome Checker
 ```c
 #include <stdio.h>
 #include<string.h>
@@ -123,8 +123,8 @@ int main(){
 #include <stdio.h>
 
 int fact(int n){
-    if(n<=0) return 0;
-    if(n==1) return 1;
+    if(n<0) return 0;
+    if(n==0||n==1) return 1;
     return n*fact(n-1);
 }
 
@@ -307,3 +307,156 @@ int main(){
     }
 }
 ```
+
+# Edit Distance
+```c
+#include <stdio.h>
+#include<string.h>
+
+int min(int x,int y, int z){
+    return (x < y) ? (x < z ? x : z) : (y < z ? y : z);
+}
+
+
+int editdistance(char* s1, char* s2){
+    int l1 = strlen(s1);
+    int l2 = strlen(s2);
+    
+    int dp[l1+1][l2+1];
+    
+    for(int i = 0; i <= l1;i++){
+        for(int j = 0 ; j <= l2 ; j++){
+            if(i == 0){
+                dp[i][j] = j;
+            }
+            else if(j == 0){
+                dp[i][j] = i;
+            }else if(s1[i-1] == s2[j-1]){
+                dp[i][j] = dp[i-1][j-1];
+            }
+            else{
+                dp[i][j] = 1+ min(dp[i][j-1],dp[i-1][j],dp[i-1][j-1]);
+            }
+        }
+    }
+    return dp[l1][l2];
+}
+
+int main(){
+    char str1[100];
+    char str2[100];
+    scanf("%s %s",str1,str2);
+    printf("%d",editdistance(str1,str2));
+}
+```
+# Longest Palindrome Substring
+```c
+#include<stdio.h>
+#include<string.h>
+#include<stdbool.h>
+
+bool ispali(int i , int j , char * str){
+    while(i<j){
+        if(str[i] != str[j]) return false;
+        i++;
+        j--;
+    }
+    return true;
+}
+
+int main(){
+    char str[100];
+    scanf("%s",str);
+    int l = strlen(str);
+    char max[100];
+    for(int i = 0 ; i < l ; i++){
+        for(int j = i+1 ; j < l ; j ++){
+            if(ispali(i,j,str)){
+                int count = j-i+1;
+                int m = strlen(max);
+                if( m < count){
+                    m = count;
+                    strncpy(max , str+i,count);
+                    max[count] = '\0';
+                }
+            }
+        }
+    }
+    printf("%s",max);
+}
+```
+# Coordinate min distance
+```c
+#include<stdio.h>
+#include<string.h>
+
+int max(int x,int y){
+    if(x<0) x*=-1;
+    if(y<0) y*=-1;
+    return (x<y)?y:x;
+}
+
+int sum(int * arr , int n){
+    int x,y,sum=0;
+    for(int i = 0; i < n ; i+=2){
+        x = arr[i]- arr[i+2];
+        y = arr[i+1] - arr[i+3];
+        sum += max(x,y);
+    }
+    return sum;
+}
+
+int main(){
+    int a;
+    scanf("%d",&a);
+    int res[a*2];
+    for(int i =0;i<a*2;i++){
+        scanf("%d",&res[i]);
+    }
+    printf("%d",sum(res,a*2));
+}
+```
+# Group Anagram
+```c
+#include<stdio.h>
+#include<string.h>
+
+int anagram(char * s1, char * s2){
+    int a[256] = {0};
+    if(strlen(s1) != strlen(s2)) return 0;
+    for(int i = 0 ; i < strlen(s1) ; i++){
+        a[s1[i]]++;
+        a[s2[i]]--;
+    }
+    for(int i = 0 ; i < 256; i++){
+        if(a[i] != 0 ) return 0;
+    }
+    return 1;
+}
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    char strs[n][100];
+    int arr[100] = {0};
+    for(int i = 0 ; i < n ; i++){
+        scanf("%s",strs[i]);
+    }
+    
+    for(int i = 0 ; i < n ; i++){
+        if(arr[i] == 0){
+            printf("%s",strs[i]);
+            arr[i] == 1;
+            for(int j = i+1; j < n ; j++){
+                int a = anagram(strs[i],strs[j]);
+                if(a == 1){
+                    printf(" %s",strs[j]);
+                    arr[j] = 1;
+                }
+            }
+            printf("\n");
+        }
+    }
+}
+```
+#
