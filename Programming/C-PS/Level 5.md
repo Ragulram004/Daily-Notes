@@ -459,4 +459,212 @@ int main(){
     }
 }
 ```
-#
+# Pivot Index
+```c
+#include<stdio.h>
+#include<string.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i = 0 ;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i = 0 ; i < n; i++){
+        int a = 0, b = 0;
+        for(int j = 0 ; j <i;j++){
+            a +=arr[j];
+        }
+        for(int j = i+1;j<n;j++){
+            b+=arr[j];
+        }
+        if(a == b){
+            printf("%d",i);
+            return 0;
+        }
+    }
+    printf("-1");
+    
+}
+```
+# Prime Anagram
+```c
+#include <stdio.h>
+#include<string.h>
+
+int isprime(int n){
+    if (n ==0 || n == 1) return 0;
+    for(int i = 2; i <=n/2 ; i++){
+        if(n%i == 0) return 0; 
+    }
+    return 1;
+}
+
+int anagram(char*s1,char*s2){
+    int arr[256] = {0};
+    if(strlen(s1) != strlen(s2)) return 0;
+    for(int i = 0 ; i <strlen(s1);i++){
+        arr[s1[i]]++;
+        arr[s2[i]]--;
+    }
+    for(int i = 0 ; i < 256;i++){
+        if(arr[i] != 0) return 0;
+    }
+    return 1;
+}
+
+int main(){
+    int a;
+    int b;
+    int limit = 0;
+    scanf("%d %d" ,&a,&b);
+    int arr[b-a+1];
+    char word[b-a+1][100];
+    for(int i = a ; i <=b;i++ ){
+        if(isprime(i)){
+            // printf("%d",i);
+            arr[limit++] = i;
+        }
+    }
+    int visit[limit];
+    for(int i = 0; i < limit ; i++){
+        sprintf(word[i],"%d",arr[i]);
+        visit[i] = 1;
+    }
+    for(int i = 0 ; i< limit ; i++){
+        int flag = 1;
+        if(visit[i] != 1) continue;
+        for(int j = i+1; j<limit;j++){
+            if(anagram(word[i],word[j])){
+                printf("%s %s",word[i],word[j]);
+                flag = 0;
+            }
+        }
+        if(!flag) printf("\n");
+    }
+}
+```
+# MAXIMUM THREE PRODUCT
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int compare(const void*x,const void*y){
+    int a = *(int *)x;
+    int b = *(int *)y;
+    return b-a;
+}
+
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i = 0 ; i < n; i++){
+        scanf("%d",&arr[i]);
+    }
+    qsort(arr,n,sizeof(int),compare);
+    int pro1 = arr[0]*arr[1]*arr[2];
+    int pro2 = arr[0]*arr[n-1]*arr[n-2];
+    (pro1>pro2)? printf("%d",pro1) : printf("%d",pro2);
+    
+}
+```
+# Binary to Int
+```c
+#include<stdio.h>
+#include<string.h>
+#include <math.h>
+
+int integer(char *s){
+    int j = 0;
+    int sum = 0;
+    for(int i = strlen(s)-1;i>=0;i--){
+        int bit = s[i]-'0';
+        sum += bit * pow(2,j);
+        j++;
+    }
+    return sum;
+}
+
+int main(){
+    char s[100];
+    scanf("%s",s);
+    printf("%d",integer(s));
+}
+```
+# Matrix Addition
+```c
+#include <stdio.h>
+#include <string.h>
+
+
+int max(int arr[100][100], int r, int c){
+    int pcount = 0; int sum =0;
+    for(int i = 0 ; i < r;i++){
+        int max = 0;
+        for(int j = 0 ; j < c ; j++){
+            if(arr[i][j]>0) pcount++;
+            if(arr[i][j] > max)  max = arr[i][j];
+        }
+        sum += max;
+    }
+    sum += pcount;
+    for(int i = 0 ; i < c;i++){
+        int max = 0;
+        for(int j = 0 ; j < r ; j++){
+            if(arr[j][i] > max)  max = arr[j][i];
+        }
+        sum += max;
+    }
+    return sum;
+    
+}
+
+int main(){
+    int r,c;
+    scanf("%d %d",&r ,&c);
+    int arr[100][100];
+    for(int i = 0 ; i < r ; i++){
+        for(int j = 0 ; j < c ; j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("%d",max(arr,r,c));
+}
+```
+# Circular Prime
+```c
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+
+int isprime(int n){
+    if(n == 0 || n == 1) return 0;
+    for(int i = 2; i<= n/2; i++){
+        if(n%i == 0) return 0;
+    }
+    return 1;
+}
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    int len = log10(n)+1;
+    int k = pow(10,len-1);
+    int flag = 1;
+    
+    for(int i = 0 ; i < len ;i++){
+        int m = n/k;
+        n= (n%k)*10+m;
+        if(!isprime(n)){
+            flag = 0; break;
+        }
+    }
+    if (flag){
+        printf("Circular");
+    }else{
+        printf("Not");
+    }
+}
+```
