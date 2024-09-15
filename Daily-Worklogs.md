@@ -1,3 +1,16 @@
+## Day65
+- 15-09-2024
+	- worked on Infra_management_System
+	- posted Linked In #30daysofMERN Day23 post.
+---
+## Day64
+- 14-09-2024
+	- worked on Infra_management_System
+---
+## Day63
+- 13-09-2024
+	- Worded on Infra_management_System
+---
 ## Day62
 - 12-09-2024
 	- prepared c-lvl-5.
@@ -6,7 +19,7 @@
 - 11-09-2024
 	- Completed java-lvl-2
 	- prepared c-lvl-5.
-	- worked and complete Intra_management_System protected routes.
+	- worked and complete Infra_management_System protected routes.
 ---
 ## Day60
 - 10-09-2024
@@ -44,22 +57,22 @@
 ## Day53
 - 02-09-2024
 	- binary search
-	- Worked on the Intra_management_System protected api route.
+	- Worked on the Infra_management_System protected api route.
 ---
 ## Day52
 - 01-09-2024
 	- solved 1 problem on leetcode.
-	- Worked on the Intra_management_System on Auth.
+	- Worked on the Infra_management_System on Auth.
 ---
 ## Day51
 - 31-08-2024
 	- solved problems on leetcode
-	- Worked on the Intra_management_System  assigned task backend.
+	- Worked on the Infra_management_System  assigned task backend.
 ---
 ## Day50
 - 30-08-2024
 	- Started DSA on Java
-	- Worked on the Intra_management_System  assigned task backend.
+	- Worked on the Infra_management_System  assigned task backend.
 ---
 ## Day49
 - 29-08-2024
@@ -69,7 +82,7 @@
 ## Day48
 - 28-08-2024
 	- updata java notes on Arrays.
-	- Worked on the Intra_management_System created new page to assigned task and delete it.
+	- Worked on the Infra_management_System created new page to assigned task and delete it.
 ---
 ## Day47
 - 27-08-2024
@@ -78,28 +91,28 @@
 ---
 ## Day46
 - 26-08-2024
-	- Worked on the Intra_management_System created new page to assign task.
+	- Worked on the Infra_management_System created new page to assign task.
 ---
 ## Day45
 - 25-08-2024
-	- Worked on the Intra_management_System created delete alert.
+	- Worked on the Infra_management_System created delete alert.
 ---
 ## Day44
 - 24-08-2024
-	- Worked on the Intra_management_System.
+	- Worked on the Infra_management_System.
 ---
 ## Day43
 - 23-08-2024
 	- posted Linked In #30daysofMERN Day21 post.
-	- created custom hook along with use context in Intra_management_System.
+	- created custom hook along with use context in Infra_management_System.
 ---
 ## Day42 
 - 22-08-2024
-	- Intra_management_System worked backend.
+	- Infra_management_System worked backend.
 ---
 ## Day40
 - 21-08-2024
-	- Started working on Intra_management_System.
+	- Started working on Infra_management_System.
 	- change in the deployed portfolio.
 ---
 ## Day39
