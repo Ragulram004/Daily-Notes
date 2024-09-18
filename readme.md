@@ -20,6 +20,4 @@ Stay tuned for daily updates and join me on this exciting journey of growth and 
 > "Success is the sum of small efforts, repeated day-in and day-out." - Robert Collier
 ---
 
-### Connect with Me
-- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/ragulram-b-455387253)
 
