@@ -1,3 +1,8 @@
+## Day67
+- 18-09-2024
+	- worked on Infra_management_System AuditorTask page.
+	- learned java bubble and selection sort.
+---
 ## Day66
 - 16-09-2024
 	- worked on Infra_management_System reportalert.
