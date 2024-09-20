@@ -1,3 +1,12 @@
+## Day69
+- 20-09-2024
+	- Added Camera popup for complaint issue in auditor's page.
+	- In itelligate project created live stream, auth and capture frame.
+---
+## Day68
+- 19-09-2024
+	- convert the Infra_management_System to real-time by using socket.io. 
+---
 ## Day67
 - 18-09-2024
 	- worked on Infra_management_System AuditorTask page.
