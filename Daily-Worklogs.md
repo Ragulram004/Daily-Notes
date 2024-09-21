@@ -1,3 +1,7 @@
+## Day70
+- 21-09-2024
+	- make the captured image to store in the DB.
+---
 ## Day69
 - 20-09-2024
 	- Added Camera popup for complaint issue in auditor's page.
