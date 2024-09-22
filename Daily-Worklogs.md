@@ -1,3 +1,7 @@
+## Day71
+- 22-09-2024
+	- added java insertion and cyclic sort.
+---
 ## Day70
 - 21-09-2024
 	- make the captured image to store in the DB.
