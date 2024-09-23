@@ -1,3 +1,8 @@
+## Day72
+- 23-09-2024
+	- Infra_management_System - table ulter and status handle.
+	- posted Linked In #30daysofMERN Day24 post.
+---
 ## Day71
 - 22-09-2024
 	- added java insertion and cyclic sort.
@@ -9,7 +14,7 @@
 ## Day69
 - 20-09-2024
 	- Added Camera popup for complaint issue in auditor's page.
-	- In itelligate project created live stream, auth and capture frame.
+	- In intelligate project created live stream, auth and capture frame.
 ---
 ## Day68
 - 19-09-2024
