@@ -1,3 +1,15 @@
+## Day75
+- 26-09-2024
+	- Infra_management_System - handyman Assign form.
+---
+## Day74
+- 25-09-2024
+	- Infra_management_System - Image card Design and code.
+---
+## Day73
+- 24-09-2024
+	- Infra_management_System - fetched image and shown in frontend.
+---
 ## Day72
 - 23-09-2024
 	- Infra_management_System - table ulter and status handle.
