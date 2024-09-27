@@ -1,3 +1,7 @@
+## Day76
+- 27-09-2024
+	- Infra_management_System - FixerTask server side api created.
+---
 ## Day75
 - 26-09-2024
 	- Infra_management_System - handyman Assign form.
