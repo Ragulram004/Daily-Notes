@@ -1,3 +1,11 @@
+## Day78
+- 29-09-2024
+	- Infra_management_System - fetch and autofill on from.
+---
+## Day77
+- 28-09-2024
+	- Infra_management_System - Fixer task form creation.
+---
 ## Day76
 - 27-09-2024
 	- Infra_management_System - FixerTask server side api created.
