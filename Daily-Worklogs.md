@@ -1,3 +1,7 @@
+## Day79
+- 01-10-2024
+	- Infra_management_System - form error handling.
+---
 ## Day78
 - 29-09-2024
 	- Infra_management_System - fetch and autofill on from.
