@@ -1,3 +1,15 @@
+## Day82
+- 05-10-2024
+	- Infra_management_System - code optimization.
+---
+## Day81
+- 04-10-2024
+	- Infra_management_System - handlyman - report page.
+---
+## Day80
+- 03-10-2024
+	- Infra_management_System - readme updated.
+---
 ## Day79
 - 01-10-2024
 	- Infra_management_System - form error handling.
