@@ -1,4 +1,4 @@
-# Daily-Works
+7# Daily-Works
 
 Welcome to my Daily-Works repository! 🚀
 
@@ -18,6 +18,4 @@ Stay tuned for daily updates and join me on this exciting journey of growth and 
 
 **Commitment to Excellence**
 > "Success is the sum of small efforts, repeated day-in and day-out." - Robert Collier
----
-
 ---
