@@ -1,3 +1,23 @@
+## Day87
+- 13-10-2024
+	- Infra_management_System - image capture and upload for fixer side.
+---
+## Day86
+- 12-10-2024
+	- Infra_management_System - created reportAlter for fixer.
+---
+## Day85
+- 09-10-2024
+	- Infra_management_System - server side populate and filter.
+---
+## Day84
+- 08-10-2024
+	- Infra_management_System - modified fixer page.
+---
+## Day83
+- 06-10-2024
+	- Infra_management_System - code optimization server side.
+---
 ## Day82
 - 05-10-2024
 	- Infra_management_System - code optimization.
