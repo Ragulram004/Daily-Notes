@@ -1,3 +1,7 @@
+## Day88
+- 14-10-2024
+	- Infra_management_System - worked on admin page for verifing the report form the fixer.
+---
 ## Day87
 - 13-10-2024
 	- Infra_management_System - image capture and upload for fixer side.
