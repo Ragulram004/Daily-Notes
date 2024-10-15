@@ -1,3 +1,6 @@
+## Day89
+- 15-10-2024
+	- Infra_management_System - worked on admin fixer, auditor dashboard created complaints chart for admin.
 ## Day88
 - 14-10-2024
 	- Infra_management_System - worked on admin page for verifing the report form the fixer.
