@@ -1,4 +1,14 @@
 ## Day89
+- 18-10-2024
+	- Infra_management_System - pending task on dashboard and json token expire handling.
+## Day89
+- 17-10-2024
+	- Infra_management_System - auditor and fixer weekly deadline api and ui to display on admin dashboard.
+## Day89
+- 16-10-2024
+	- Infra_management_System - auditor and fixer statistics api and ui to display statistics on admin dashboard.
+	-  posted Linked In #30daysofMERN Day25 post.
+## Day89
 - 15-10-2024
 	- Infra_management_System - worked on admin fixer, auditor dashboard created complaints chart for admin.
 ## Day88
