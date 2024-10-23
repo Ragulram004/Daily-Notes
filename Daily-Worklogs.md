@@ -1,16 +1,32 @@
-## Day89
+## Day95
+- 23-10-2024
+	- solved leet code 
+---
+## Day94
+- 22-10-2024
+	- solved leet code.
+---
+## Day93
+- 21-10-2024
+	- solved leet code - based on cyclic sort.
+---
+## Day92
 - 18-10-2024
 	- Infra_management_System - pending task on dashboard and json token expire handling.
-## Day89
+---
+## Day91
 - 17-10-2024
 	- Infra_management_System - auditor and fixer weekly deadline api and ui to display on admin dashboard.
-## Day89
+---
+## Day90
 - 16-10-2024
 	- Infra_management_System - auditor and fixer statistics api and ui to display statistics on admin dashboard.
 	-  posted Linked In #30daysofMERN Day25 post.
+---
 ## Day89
 - 15-10-2024
 	- Infra_management_System - worked on admin fixer, auditor dashboard created complaints chart for admin.
+---
 ## Day88
 - 14-10-2024
 	- Infra_management_System - worked on admin page for verifing the report form the fixer.
