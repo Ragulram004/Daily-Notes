@@ -1,3 +1,8 @@
+## Day96
+- 25-10-2024
+	- solved leet code 
+	- string and string-builder in java
+---
 ## Day95
 - 23-10-2024
 	- solved leet code 
