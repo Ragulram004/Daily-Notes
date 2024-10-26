@@ -1,3 +1,8 @@
+## Day97
+- 26-10-2024
+	- solved leet code 
+	- Pattern Questions
+---
 ## Day96
 - 25-10-2024
 	- solved leet code 
