@@ -1,3 +1,7 @@
+## Day98
+- 27-10-2024
+	- updated project section in portfolio.
+---
 ## Day97
 - 26-10-2024
 	- solved leet code 
