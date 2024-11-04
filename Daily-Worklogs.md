@@ -1,3 +1,7 @@
+## Day100
+- 4-11-2024
+	- posted Linked In #30daysofMERN Day26 post on state management.
+---
 ## Day99
 - 28-10-2024
 	- recursion-lecture.
@@ -8,8 +12,8 @@
 ---
 ## Day97
 - 26-10-2024
-	- solved leet code 
-	- Pattern Questions
+	- solved leet code.
+	- Pattern Questions.
 ---
 ## Day96
 - 25-10-2024
