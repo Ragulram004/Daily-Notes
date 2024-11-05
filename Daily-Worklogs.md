@@ -1,5 +1,10 @@
+## Day101
+- 05-11-2024
+	- Binary Search using recursion.
+	- Time and Space Complexity.
+---
 ## Day100
-- 4-11-2024
+- 04-11-2024
 	- posted Linked In #30daysofMERN Day26 post on state management.
 ---
 ## Day99
@@ -17,12 +22,12 @@
 ---
 ## Day96
 - 25-10-2024
-	- solved leet code 
+	- solved leet code.
 	- string and string-builder in java
 ---
 ## Day95
 - 23-10-2024
-	- solved leet code 
+	- solved leet code.
 ---
 ## Day94
 - 22-10-2024
