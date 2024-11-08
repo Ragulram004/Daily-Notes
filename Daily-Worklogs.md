@@ -1,3 +1,8 @@
+## Day102
+- 08-11-2024
+	- little omega, little oh.
+	- solved leetcode-66
+---
 ## Day101
 - 05-11-2024
 	- Binary Search using recursion.
