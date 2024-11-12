@@ -150,7 +150,7 @@ class Solution {
     }
 }
 ```
-# [198. House Robber](https://leetcode.com/problems/house-robber/)\
+# [198. House Robber](https://leetcode.com/problems/house-robber/)
 ```java
 class Solution {
 
@@ -182,5 +182,46 @@ class Solution {
 
 }
 ```
-# 
+# [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+```java
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        int[] res = new int[nums.length];
+        int leftproduct = 1;
+        int rightproduct = 1;
+        for(int i = 0; i < nums.length ; i++){
+            res[i] = leftproduct;
+            leftproduct *= nums[i];
+        }
+        for(int j = nums.length -1 ; j >= 0 ;j--){
+            res[j] *= rightproduct;
+            rightproduct *= nums[j]; 
+        }
+        return res;
+    }
+}
+```
+# [75. Sort Colors](https://leetcode.com/problems/sort-colors/)
+```java
+class Solution {
+    public void sortColors(int[] nums) {
+        int num0 = 0;
+        int num1 = 0;
+        for(int i = 0 ; i < nums.length;i++){
+            num0 = (nums[i] == 0)?num0+1:num0;
+            num1 = (nums[i] == 1)?num1+1:num1;
+        }
+        for(int i = 0;i<num0;i++){
+            nums[i] = 0;
+        }
+        for(int i = num0;i<num1+num0;i++){
+            nums[i] = 1;
+        }
+        for(int i = num1+num0;i<nums.length;i++){
+            nums[i] = 2;
+        }
+    }
+}
+```
+#
 
