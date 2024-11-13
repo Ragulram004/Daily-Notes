@@ -1,3 +1,8 @@
+## Day104
+- 13-11-2024
+	- solved leetcode- 121, 56.
+	- java bitwise.
+---
 ## Day103
 - 12-11-2024
 	- solved leetcode- 75, 238, 169.
