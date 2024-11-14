@@ -50,3 +50,53 @@ class Noofbasedigit{
   }
 }
 ```
+
+### **Weather a num is pow of 2**
+```java
+class powof2{
+  public static void main(String[] args){
+    int n = 16; //exception for 0 will return true fix that.
+    boolean ans = (n&(n-1)) == 0;
+    System.out.println(ans);
+  }
+}
+```
+### **Power**
+```java
+class Power{
+  public static void main(String[] args){
+    int base = 4;
+    int power = 3;
+    int ans =1;
+    while(power > 0){
+      if((power & 1) == 1){
+        ans *= base;
+      }
+      base *= base;
+      power = power >> 1;
+    }
+    System.out.println(ans);
+  }
+}
+```
+### **Set bits**
+```java
+class Setbits{
+  public static void main(String[] args){
+    int n =7;
+    int ans = 0;
+    while(n >0){
+      if((n & 1) == 1){
+        ans++;
+      }
+      n = n >> 1;
+    }
+    System.out.println(ans);
+  }
+}
+------------------- or ------------------------
+while(n>0){
+	count++;
+	n = n & (n-1);
+}
+```
