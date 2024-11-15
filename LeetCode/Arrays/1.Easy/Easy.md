@@ -153,4 +153,48 @@ class Solution {
     }
 }
 ```
-#
+# [832. Flipping an Image](https://leetcode.com/problems/flipping-an-image/)
+```java
+class Solution {
+    public int[][] flipAndInvertImage(int[][] image) {
+        for(int[] row : image){
+            for(int i = 0 ; i < (image[0].length+1)/ 2 ; i++){
+                int temp = row[i] ^ 1;
+                row[i] = row[image[0].length - i -1] ^ 1;
+                row[image[0].length-i-1] = temp;
+            }
+        }
+        return image;
+    }
+}
+```
+# [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
+```java
+class Solution {
+    public int[] sortedSquares(int[] nums) {
+        for(int i = 0 ; i < nums.length;i++){
+            nums[i] = nums[i] * nums[i];
+        }
+        Arrays.sort(nums);
+        return nums;
+    }
+}
+```
+# [344. Reverse String](https://leetcode.com/problems/reverse-string/)
+```java
+class Solution {
+    public void reverseString(char[] s) {
+        int len = s.length;
+        int start = 0;
+        int end = len - 1;
+        while (start<end){
+            char temp = s[start];
+            s[start] = s[end];
+            s[end] = temp;
+            start++;
+            end--;
+        }     
+    }
+}
+```
+# 
