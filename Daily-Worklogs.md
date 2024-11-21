@@ -1,6 +1,11 @@
+## Day109
+- 21-11-2024
+	- posted Linked In #30daysofMERN Day27 post on performance optimization.
+---
 ## Day108
 - 18-11-2024
 	- recursion practice.
+	- leat - 1342.
 ---
 ## Day107
 - 16-11-2024
